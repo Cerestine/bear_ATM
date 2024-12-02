@@ -34,6 +34,7 @@ if __name__ == "__main__":
                                 chash = atm.cash(cash_num)
                                 result, balance = atm.bank_transaction(transaction_num, bank_accounts[account_num], cash_num)
                             print(f"Current balance of account: {bank_accounts[account_num]} is ${balance}")
+                            atm.reset()
                             break
                         else:
                             print("Wrong input please try again")
