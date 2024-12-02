@@ -32,8 +32,8 @@ class bankApi:
         if self._connect():
             # the bank API need 2 inputs.
             # action -> validation, balance, deposit, withdraw, account
-            # data -> data corresponding with above action
-            # result_data -> 
+            # data -> data corresponding with above action. [Account number, cash]
+            # result_data -> Final balance of account after transaction. None for validation
             # bank API must return if request is succesfull or not as boolean
             result, result_data = self.bank_REST_API_Handle.request(action, data)
             if result:
